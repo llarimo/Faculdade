@@ -10,3 +10,55 @@ Em qual pasta os workflows do GitHub ficam armazenados?
 Dentro da pasta:
 .github/workflows
 
+O que aparece no log do GitHub Actions após a execução?
+
+💡 Resposta:
+O log mostra cada etapa do workflow, incluindo:
+
+-checkout do código
+-instalação do Python
+-execução do script
+E exibe o output do programa, por exemplo:
+Hello world!
+
+O que acontece se alterar o código e fizer novo push?
+
+💡 Resposta:
+O GitHub Actions executa o workflow novamente automaticamente, porque o evento push na branch main foi configurado para disparar a ação.
+
+O que acontece se um teste falhar?
+
+💡 Resposta:
+O workflow para imediatamente e o job é marcado como FAILED.
+Isso impede que versões com erro avancem no pipeline.
+
+Como o GitHub Actions ajuda a detectar erros cedo?
+
+💡 Resposta:
+Porque ele roda automaticamente testes, builds e validações a cada push ou pull request, evitando que erros cheguem à produção e facilitando a correção na mesma hora em que o problema foi introduzido.
+
+Quais seriam exemplos reais de CI/CD em projetos web ou mobile?
+
+💡 Resposta:
+
+Web:
+-rodar testes automatizados
+-construir o frontend
+-gerar imagens Docker
+-fazer deploy automático para Amazon AWS, Azure, Netlify ou Vercel
+
+Mobile:
+-gerar builds Android (.apk/.aab)
+-gerar builds iOS (.ipa)
+-rodar testes unitários e de interface
+-enviar a versão automaticamente para TestFlight ou Google Play (track interna)
+
+Como o deploy automático poderia ser feito a partir deste pipeline?
+
+💡 Resposta:
+Basta adicionar novos steps no workflow, como:
+-upload para servidor via SSH
+-deploy para AWS S3 / CloudFront
+-criação de imagem Docker e push para Docker Hub
+-publicação automática em plataformas como Vercel, Netlify ou Render
+Assim, ao fazer push na branch principal, o código é testado e implantado automaticamente.
