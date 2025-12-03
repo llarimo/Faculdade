@@ -1,3 +1,5 @@
+ETAPA 1
+
 1. Por que o Git é considerado um sistema de controle de versão distribuído?
 
 💡 Resposta:
@@ -40,6 +42,8 @@ Para copiar um repositório remoto (ex: GitHub) para sua máquina, criando um re
 - Modified → Unmodified: quando você descarta mudanças com git restore ou git checkout --.
 - Staged → Modified: quando você edita o arquivo depois de ter dado git add.
 
+ETAPA 2
+
 7. Qual foi a mensagem exibida após o comando git init e o que ela significa na prática?
 
 💡 Resposta:
@@ -47,6 +51,8 @@ A mensagem é:
 Initialized empty Git repository in /caminho/da/pasta/.git/
 Isso significa que o Git criou uma pasta oculta .git, onde ele armazena todo o histórico, commits, branches e configurações.
 Ou seja, sua pasta agora é oficialmente um repositório Git.
+
+ETAPA 3
 
 1. Qual o estado do arquivo antes e depois do git add?
 
@@ -70,3 +76,30 @@ Registrar um ponto no histórico, salvando o estado dos arquivos que estão na s
 💡 Resposta:
 O arquivo passa a ser tracked e unmodified (rastreado e sem modificações pendentes).
 
+ETAPA EXTRA
+
+1. O que o comando git diff mostra?
+
+💡 Resposta:
+Mostra as diferenças entre sua versão modificada no working directory e a última versão registrada no repositório (HEAD).
+
+2. Qual commit está atualmente apontado por HEAD?
+
+💡 Resposta:
+HEAD sempre aponta para o ultimo commit da branch atual, normalmente o mais recente da main ou da branch onde você está.
+
+ETAPA 4
+
+1. Como verificar em qual branch você está?
+
+💡 Resposta:
+Use:
+"git branch" ou "git status"
+A branch atual aparece com um asterisco (*) ao lado ou que mostra “On branch nome-da-branch”.
+
+2. O que acontece se você rodar git merge nova-feature estando na branch principal?
+
+💡 Resposta:
+O Git vai mesclar as alterações da branch nova-feature dentro da branch atual (principal).
+Se não houver conflitos, cria um commit de merge.
+Se houver conflitos, você precisa resolvê-los manualmente.
