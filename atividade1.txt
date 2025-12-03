@@ -40,3 +40,33 @@ Para copiar um repositório remoto (ex: GitHub) para sua máquina, criando um re
 - Modified → Unmodified: quando você descarta mudanças com git restore ou git checkout --.
 - Staged → Modified: quando você edita o arquivo depois de ter dado git add.
 
+7. Qual foi a mensagem exibida após o comando git init e o que ela significa na prática?
+
+💡 Resposta:
+A mensagem é:
+Initialized empty Git repository in /caminho/da/pasta/.git/
+Isso significa que o Git criou uma pasta oculta .git, onde ele armazena todo o histórico, commits, branches e configurações.
+Ou seja, sua pasta agora é oficialmente um repositório Git.
+
+1. Qual o estado do arquivo antes e depois do git add?
+
+💡 Resposta:
+Antes: untracked (o Git ainda não controla/monitora o arquivo).
+Depois: staged (preparado para o próximo commit).
+
+2. O que significa o estado untracked e tracked?
+
+💡 Resposta:
+Untracked: o arquivo não é monitorado pelo Git — recém-criado ou ainda não adicionado.
+Tracked: o arquivo é monitorado, ou seja, já foi adicionado ao Git pelo menos uma vez.
+
+3. Qual o objetivo do git commit?
+
+💡 Resposta:
+Registrar um ponto no histórico, salvando o estado dos arquivos que estão na staging area.
+
+4. Qual o estado do arquivo após o git commit?
+
+💡 Resposta:
+O arquivo passa a ser tracked e unmodified (rastreado e sem modificações pendentes).
+
