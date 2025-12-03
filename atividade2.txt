@@ -1,0 +1,12 @@
+O que é CI/CD e por que é importante?
+
+💡 Resposta:
+CI/CD é um conjunto de práticas que automatizam integração, testes e entrega de software.
+Ajuda a detectar erros cedo, reduzir retrabalho, aumentar a qualidade e tornar o desenvolvimento mais rápido e confiável.
+
+Em qual pasta os workflows do GitHub ficam armazenados?
+
+💡 Resposta:
+Dentro da pasta:
+.github/workflows
+
