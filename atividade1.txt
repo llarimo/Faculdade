@@ -103,3 +103,43 @@ A branch atual aparece com um asterisco (*) ao lado ou que mostra “On branch n
 O Git vai mesclar as alterações da branch nova-feature dentro da branch atual (principal).
 Se não houver conflitos, cria um commit de merge.
 Se houver conflitos, você precisa resolvê-los manualmente.
+
+ETAPA 5
+
+O que significa o -u no comando git push -u origin main?
+
+💡 Resposta:
+-u define a branch upstream, ou seja, vincula sua branch local main à branch main do remoto (origin).
+Depois disso, você pode usar só:
+git push
+git pull
+sem repetir o repositório e a branch.
+
+2. Como verificar os remotes configurados no repositório?
+
+💡 Resposta:
+Use:
+git remote -v
+Mostra todos os repositórios remotos conectados (fetch e push).
+
+Qual etapa foi mais difícil?
+
+💡 Resposta:
+A etapa mais difícil foi entender a diferença entre working directory, staging area e repository, porque envolve compreender como o Git controla o histórico internamente.
+(Outra etapa que muitos acham difícil é o merge, quando há conflitos.)
+
+Como o Git ajuda na colaboração?
+
+💡 Resposta:
+O Git permite que várias pessoas trabalhem no mesmo projeto ao mesmo tempo, criando branches separadas, registrando histórico e depois mesclando trabalhos sem sobrescrever o código dos outros.
+Ele também mostra o histórico de quem mudou o quê e quando.
+
+Que diferença faz ter um repositório remoto?
+
+💡 Resposta:
+O repositório remoto permite:
+- compartilhar o projeto com outras pessoas;
+- fazer backup seguro na nuvem;
+- sincronizar alterações entre várias máquinas;
+- colaborar por meio de pull requests, issues e revisões.
+Sem um remoto, o trabalho fica limitado ao meu computador.
