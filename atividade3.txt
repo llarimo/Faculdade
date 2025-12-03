@@ -1,0 +1,52 @@
+O que é CD e qual sua relação com CI?
+
+💡 Resposta:
+CD (Continuous Delivery/Deployment) é o processo de entregar ou publicar o software automaticamente após ele ser testado e validado.
+Ele é a continuação natural do CI:
+-CI detecta erros cedo → testa, valida e cria o build.
+-CD usa o build aprovado e entrega em produção ou ambiente ativo automaticamente.
+
+Quais são os benefícios da entrega contínua?
+
+💡 Resposta:
+-Reduz tempo entre desenvolvimento e publicação
+-Diminui erros humanos no deploy
+-Garante entregas mais rápidas e frequentes
+-Melhora a qualidade do código
+-Aumenta a confiança no processo
+-Automatiza tarefas repetitivas
+
+O que acontece após o workflow deploy.yml rodar com sucesso?
+
+💡 Resposta:
+O GitHub Actions cria ou atualiza a branch gh-pages, e o GitHub Pages publica automaticamente o site no link:
+https://<usuário>.github.io/ci-cd-teste/
+Cada novo push na main dispara outro deploy automático.
+
+Qual é a principal diferença prática entre CI e CD?
+
+💡 Resposta:
+
+-CI: testa, valida e integra código continuamente.
+-CD: publica automaticamente o código validado em produção (ou ambiente final).
+Ou seja:
+CI = “o código funciona”
+CD = “o código funcionando foi entregue automaticamente”.
+
+O que aconteceria se o teste falhasse antes do deploy?
+
+💡 Resposta:
+O job test seria marcado como FAILED, e o job deploy não seria executado.
+Isso impede que código quebrado vá para produção.
+
+Como a entrega contínua aumenta a confiança do time no processo?
+
+💡 Resposta:
+Porque o time sabe que:
+
+-todo código é testado automaticamente
+-falhas são detectadas antes do deploy
+-o deploy é padronizado, previsível e sem erros manuais
+-o sistema faz entregas pequenas e frequentes, reduzindo riscos
+-Isso torna o processo mais confiável e reduz ansiedade em publicar novas versões.
+
